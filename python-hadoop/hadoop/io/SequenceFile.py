@@ -23,15 +23,15 @@ import os
 
 from hadoop.util.ReflectionUtils import hadoopClassFromName, hadoopClassName
 
-from compress import CodecPool
+from hadoop.io.compress import CodecPool
 
-from WritableUtils import readVInt, writeVInt
-from Writable import Writable
-from OutputStream import FileOutputStream, DataOutputStream, DataOutputBuffer
-from InputStream import FileInputStream, DataInputStream, DataInputBuffer
-from VersionMismatchException import VersionMismatchException, VersionPrefixException
+from hadoop.io.WritableUtils import readVInt, writeVInt
+from hadoop.io.Writable import Writable
+from hadoop.io.OutputStream import FileOutputStream, DataOutputStream, DataOutputBuffer
+from hadoop.io.InputStream import FileInputStream, DataInputStream, DataInputBuffer
+from hadoop.io.VersionMismatchException import VersionMismatchException, VersionPrefixException
 
-from Text import Text
+from hadoop.io.Text import Text
 
 BLOCK_COMPRESS_VERSION  = '\x04'
 CUSTOM_COMPRESS_VERSION = '\x05'
