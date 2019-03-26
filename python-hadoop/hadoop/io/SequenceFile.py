@@ -33,9 +33,9 @@ from hadoop.io.VersionMismatchException import VersionMismatchException, Version
 
 from hadoop.io.Text import Text
 
-BLOCK_COMPRESS_VERSION  = '\x04'
-CUSTOM_COMPRESS_VERSION = '\x05'
-VERSION_WITH_METADATA   = '\x06'
+BLOCK_COMPRESS_VERSION  = b'\x04'
+CUSTOM_COMPRESS_VERSION = b'\x05'
+VERSION_WITH_METADATA   = b'\x06'
 VERSION_PREFIX = b'SEQ'
 VERSION = VERSION_PREFIX + VERSION_WITH_METADATA
 
